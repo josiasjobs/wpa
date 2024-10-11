@@ -6,7 +6,7 @@
     <title>Meu App PWA</title>
 
     <!-- Link para o arquivo de manifesto -->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
 
     <!-- Adicionando um ícone (opcional, mas recomendado para PWA) -->
     <link rel="icon" type="image/png" href="/icons/icon-192x192.png">
@@ -26,7 +26,7 @@
 
         // Verifica se o navegador suporta Service Workers
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js')
+            navigator.serviceWorker.register('sw.js')
                 .then(function(registration) {
                     console.log('Service Worker registrado com sucesso:', registration);
                 })
